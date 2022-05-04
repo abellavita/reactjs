@@ -1,0 +1,115 @@
+$mainColor: #2D025C;
+$mainColorlight: #482371;
+$secColor: #744FFE;
+$secColorStrong: #5C35C5;
+$containerColor: #e2e9df;
+$whiteColor: #f1faee;
+$footerColor: #2D025C;
+$headerColor: #2D025C;
+$remainColor: #dac615;
+
+//#f1faee
+
+/* barra de navegación */ 
+.navClass {
+    margin: 0px;
+    padding: 0px;
+    background-color: $footerColor;
+    text-align: center;
+   width: 100%; 
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: sticky;
+  &__a--activo{
+    background-color: $mainColorlight;
+  }
+
+&__i {
+    color: white;
+    font-size: 25px;
+    justify-items: center;
+    margin: 5px;    
+}
+
+  &__ul{
+    @include borderBox(0px,4px);
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    justify-items: stretch;
+    align-items: center;
+
+}
+
+/*Enlaces*/
+&__li{ 
+    color:white;   
+    font-style:300;  
+    font-size: 15px;    
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+&__a {
+    text-decoration: none;
+    list-style-type: none;
+    @include borderBox(0px,4px);
+    color:white; 
+}
+
+&__ul, &__li {
+    @include borderBox(0px,0px);
+    
+   }
+
+
+
+&__a:hover {
+    background-color: $mainColorlight;
+}
+
+
+    &__a{
+        display: grid;
+        align-items: center;
+    }
+
+
+
+   }
+
+
+
+
+@media only screen and (min-width:768px){
+    .navClass{
+     
+     flex-direction: row;
+   
+     justify-content: center;
+      /*Enlaces*/
+     &__ul{
+        width:80%;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-items: stretch;
+        align-items: stretch;
+        grid-gap: 0px;
+        padding: 0px;
+    }
+    .collapse{
+        display: grid;
+    }
+    &__a {
+           
+       padding: 20px;
+        
+       }
+
+    &__i{
+        display: none !important;
+    }
+
+    }
+    }

@@ -1,0 +1,105 @@
+/*Header*/
+.centrarContenido {
+    display: grid;
+    justify-items: center;
+    align-items: center; }
+  
+  .header {
+    background-color: #2D025C;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center; }
+    .header__img {
+      height: 100px;
+      width: 100px ;
+      margin: 0px;
+      padding: 0px;
+      color: white; }
+    .header__nombreEmpresa {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .header__nombreEmpresa__h1 {
+        color: #f1faee;
+        text-transform: uppercase;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        font-size: 700; }
+      .header__nombreEmpresa__p {
+        color: #f1faee;
+        font-size: 0.5em;
+        text-transform: uppercase; }
+  
+  @media only screen and (min-width: 640px) {
+    .header__nombreEmpresa__h1 {
+      font-size: 437.5; }
+    .header__nombreEmpresa__p {
+      font-size: 0.8em; } }
+  
+  @media only screen and (min-width: 768px) {
+    .header {
+      justify-content: space-between; } }
+
+/* barra de navegación */
+.navClass {
+    margin: 0px;
+    padding: 0px;
+    background-color: #2D025C;
+    text-align: center;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /*Enlaces*/ }
+    .navClass__a--activo {
+      background-color: #482371; }
+    .navClass__ul {
+      padding: 4px;
+      margin: 0px;
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      justify-items: stretch;
+      align-items: center; }
+    .navClass__li {
+      color: white;
+      font-style: 300;
+      font-size: 15px;
+      word-spacing: 3px;
+      text-transform: capitalize; }
+    .navClass__a {
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0px;
+      padding: 4px;
+      color: white; }
+    .navClass__ul, .navClass__li {
+      margin: 0px;
+      padding: 0px; }
+    .navClass__a:hover {
+      background-color: #482371; }
+    .navClass__a {
+      display: grid;
+      align-items: center; }
+  
+  @media only screen and (min-width: 768px) {
+    .navClass {
+      position: sticky;
+      flex-direction: row;
+      justify-content: center;
+      /*Enlaces*/ }
+      .navClass__ul {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-items: stretch;
+        align-items: stretch;
+        grid-gap: 0px;
+        padding: 0px; }
+      .navClass__a {
+        padding: 20px; } }
