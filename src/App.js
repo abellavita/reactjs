@@ -1,6 +1,6 @@
 
 import './App.css';
-//import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { NavBar } from './components/NavBar/NavBar';
 
 
@@ -11,7 +11,7 @@ function App() {
     {/* < Header /> */}
     < NavBar/>
     
-    {/* <ItemListContainer name="Bienvenidos a la tienda virtual" />   */}
+    { <ItemListContainer name="Bienvenidos a la tienda virtual" />   }
       {/* homeView */}
 
       {/* article */}
